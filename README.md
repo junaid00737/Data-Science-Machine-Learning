@@ -71,3 +71,46 @@ The final models are evaluated to assess their performance in predicting used ca
 
 ## Conclusion
 The goal of this project is to provide accurate price predictions for used cars by using data preprocessing, feature engineering, model selection, and hyperparameter tuning. By following these steps, the most effective model is selected based on performance metrics.
+
+
+## Model Evaluation and Results
+
+We attempted to train above mentioned regression models to predict the prices of used cars.
+
+### Hyperparameter Tuning and Feature Selection
+Hyperparameter tuning was performed using **GridSearchCV** to find the optimal set of parameters for each model. Additionally, the top 10 features, as determined by their importance in the regression models, were selected for training.
+
+### Model Performance
+## Model Evaluation and Results
+
+### XGBoost
+Initially, our **XGBoost** model showed promise with an initial score of **6648**. After thorough data cleaning and refining the one-hot encoding process, its performance improved significantly. The refined model achieved a remarkable score of **5324**, highlighting the importance of data quality in machine learning. This improvement resulted in more accurate predictions and emphasized how effective data preprocessing is for enhancing model performance.
+
+### GradientBoostingRegressor
+At the outset, the **GradientBoostingRegressor** delivered a score of **5841**, demonstrating strong predictive capabilities. After extensive data cleaning and improvements to one-hot encoding, the model's performance saw a substantial boost. It achieved a commendable score of **4835**, further reinforcing its exceptional predictive power. This improvement underscores the importance of data preprocessing in optimizing model performance.
+
+#### GradientBoostingRegressor's Superior Performance
+- **Ensemble Learning Approach**:  
+  The **GradientBoostingRegressor** utilizes an ensemble learning approach, which combines the predictions of multiple weak learners to create a robust and powerful model. This ensemble technique contributes to better predictive capabilities, making it a reliable choice for price prediction.
+  
+- **Strong Hyperparameter Tuning**:  
+  The fine-tuning process significantly enhanced the model's performance. Key hyperparameters such as a **learning rate of 0.01**, **maximum depth of 12**, and **800 estimators** were selected to optimize the model for accuracy and reliability. This hyperparameter selection played a crucial role in improving the model's predictions.
+
+- **Effective Feature Engineering**:  
+  The improvement in data quality and refinement of one-hot encoding further boosted the **GradientBoostingRegressor**'s performance. This highlights the model's ability to leverage clean and well-prepared data for enhanced predictions.
+
+- **Final Score of 4835**:  
+  After these adjustments, the **GradientBoostingRegressor** achieved a final score of **4835**, signifying its remarkable predictive abilities. This score indicates the model's precision and its ability to make accurate predictions consistently.
+
+### DecisionTreeRegressor
+The **DecisionTreeRegressor**, initially scoring **8986**, underwent a similar transformation after data cleaning and refining the one-hot encoding. The model's predictive power surged, and it achieved an impressive score of **7075**. However, the journey from a higher initial score to a lower final score underscores the importance of data quality and feature engineering in model refinement. Although the **DecisionTreeRegressor** showed improvement, it still lagged behind the other models in terms of predictive performance.
+
+### Conclusion: GradientBoostingRegressor as the Top-Performing Model
+The choice of **GradientBoostingRegressor** as the top-performing model is supported by several key factors:
+
+- **Ensemble Learning**: The combination of multiple weak learners improves prediction accuracy.
+- **Hyperparameter Tuning**: Careful optimization of hyperparameters played a significant role in boosting model performance.
+- **Feature Engineering**: Effective data preprocessing, such as one-hot encoding and outlier removal, contributed to the model's precision.
+
+The final score of **4835** solidifies **GradientBoostingRegressor** as the most reliable model for accurately predicting used car prices, making it the optimal choice for our project.
+
