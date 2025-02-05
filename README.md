@@ -73,15 +73,12 @@ The final models are evaluated to assess their performance in predicting used ca
 The goal of this project is to provide accurate price predictions for used cars by using data preprocessing, feature engineering, model selection, and hyperparameter tuning. By following these steps, the most effective model is selected based on performance metrics.
 
 
-## Model Evaluation and Results
+### Model Performance
 
-We attempted to train above mentioned regression models to predict the prices of used cars.
+## Model Evaluation and Results
 
 ### Hyperparameter Tuning and Feature Selection
 Hyperparameter tuning was performed using **GridSearchCV** to find the optimal set of parameters for each model. Additionally, the top 10 features, as determined by their importance in the regression models, were selected for training.
-
-### Model Performance
-## Model Evaluation and Results
 
 ### XGBoost
 Initially, our **XGBoost** model showed promise with an initial score of **6648**. After thorough data cleaning and refining the one-hot encoding process, its performance improved significantly. The refined model achieved a remarkable score of **5324**, highlighting the importance of data quality in machine learning. This improvement resulted in more accurate predictions and emphasized how effective data preprocessing is for enhancing model performance.
@@ -105,7 +102,7 @@ At the outset, the **GradientBoostingRegressor** delivered a score of **5841**, 
 ### DecisionTreeRegressor
 The **DecisionTreeRegressor**, initially scoring **8986**, underwent a similar transformation after data cleaning and refining the one-hot encoding. The model's predictive power surged, and it achieved an impressive score of **7075**. However, the journey from a higher initial score to a lower final score underscores the importance of data quality and feature engineering in model refinement. Although the **DecisionTreeRegressor** showed improvement, it still lagged behind the other models in terms of predictive performance.
 
-### Conclusion: GradientBoostingRegressor as the Top-Performing Model
+### Summary: GradientBoostingRegressor as the Top-Performing Model
 The choice of **GradientBoostingRegressor** as the top-performing model is supported by several key factors:
 
 - **Ensemble Learning**: The combination of multiple weak learners improves prediction accuracy.
